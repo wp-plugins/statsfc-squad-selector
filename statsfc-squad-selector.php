@@ -139,8 +139,8 @@ class StatsFC_SquadSelector extends WP_Widget {
 				throw new Exception('Please enter a StatsFC squad ID from the widget options');
 			}
 
-			wp_register_script(STATSFC_PREDICTIONLEAGUE_ID . '-js', plugins_url('script.js', __FILE__));
-			wp_enqueue_script(STATSFC_PREDICTIONLEAGUE_ID . '-js');
+			wp_register_script(STATSFC_SQUADSELECTOR_ID . '-js', plugins_url('script.js', __FILE__));
+			wp_enqueue_script(STATSFC_SQUADSELECTOR_ID . '-js');
 
 			$key         = esc_attr($key);
 			$squad       = esc_attr($squad);
