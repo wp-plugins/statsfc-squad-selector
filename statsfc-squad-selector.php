@@ -3,7 +3,7 @@
 Plugin Name: StatsFC Squad Selector
 Plugin URI: https://statsfc.com/docs/wordpress
 Description: StatsFC Squad Selector
-Version: 1.0
+Version: 1.1
 Author: Will Woodward
 Author URI: http://willjw.co.uk
 License: GPL2
@@ -145,10 +145,10 @@ class StatsFC_SquadSelector extends WP_Widget {
 			$key         = esc_attr($key);
 			$squad       = esc_attr($squad);
 			$orientation = esc_attr($orientation);
-			$width       = ($orientation == 'vertical' ? 510 : 710);
+			$width       = ($orientation == 'vertical' ? 'style="width: 100%; min-width: 310px;"' : 'width="710"');
 
 			$html .= <<< HTML
-			<iframe id="statsfc-squad-selector" src="https://xi.statsfc.com/{$key}/{$squad}?orientation={$orientation}" width="{$width}" height="750" scrolling="no" frameborder="no"></iframe>
+			<iframe id="statsfc-squad-selector" src="https://xi.statsfc.com/{$key}/{$squad}?orientation={$orientation}" {$width} height="750" scrolling="no" frameborder="no"></iframe>
 HTML;
 		} catch (Exception $e) {
 			$html .= '<p style="text-align: center;">StatsFC.com – ' . esc_attr($e->getMessage()) . '</p>' . PHP_EOL;
