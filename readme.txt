@@ -12,9 +12,9 @@ This widget will place a bespoke squad selector on your website.
 
 == Description ==
 
-Add a squad selector to your WordPress website. To request an API key sign up for free at [statsfc.com](https://statsfc.com).
+Add a squad selector to your WordPress website. To request a key sign up for your free trial at [statsfc.com](https://statsfc.com).
 
-For a demo, check out [wp.statsfc.com/squad-selector](http://wp.statsfc.com/squad-selector).
+For a demo, check out [wp.statsfc.com/squad-selector/](http://wp.statsfc.com/squad-selector/).
 
 == Installation ==
 
