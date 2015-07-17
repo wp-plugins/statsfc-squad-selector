@@ -68,25 +68,25 @@ class StatsFC_SquadSelector extends WP_Widget
         ?>
         <p>
             <label>
-                <?php _e('Title', STATSFC_SQUADSELECTOR_ID); ?>:
+                <?php _e('Title', STATSFC_SQUADSELECTOR_ID); ?>
                 <input class="widefat" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>">
             </label>
         </p>
         <p>
             <label>
-                <?php _e('StatsFC Key', STATSFC_SQUADSELECTOR_ID); ?>:
+                <?php _e('StatsFC Key', STATSFC_SQUADSELECTOR_ID); ?>
                 <input class="widefat" name="<?php echo $this->get_field_name('key'); ?>" type="text" value="<?php echo esc_attr($key); ?>">
             </label>
         </p>
         <p>
             <label>
-                <?php _e('StatsFC Squad ID', STATSFC_SQUADSELECTOR_ID); ?>:
+                <?php _e('StatsFC Squad ID', STATSFC_SQUADSELECTOR_ID); ?>
                 <input class="widefat" name="<?php echo $this->get_field_name('squad'); ?>" type="text" value="<?php echo esc_attr($squad); ?>">
             </label>
         </p>
         <p>
             <label>
-                <?php _e('Orientation', STATSFC_SQUADSELECTOR_ID); ?>:
+                <?php _e('Orientation', STATSFC_SQUADSELECTOR_ID); ?>
                 <select class="widefat" name="<?php echo $this->get_field_name('orientation'); ?>">
                     <?php
                     foreach (array('vertical', 'horizontal') as $direction) {
